@@ -1,0 +1,47 @@
+{
+  "name": "luftkvalitet-micro",
+  "version": "1.0.0",
+  "description": "Collect data from luftkvalitet.info API",
+  "license": "MIT",
+  "author": {
+    "name": "Jonas Enge",
+    "email": "jonas.enge@gmai.com",
+    "url": "https://maccyber.io"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.5.0"
+  },
+  "scripts": {
+    "start": "micro -p 3000",
+    "test": "standard && nsp check && tap --reporter=spec test/*.js",
+    "coverage": "tap test/*.js --coverage",
+    "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls"
+  },
+  "keywords": [
+    "luftkvalitet-micro",
+    "luftkvalitet.info"
+  ],
+  "standard": {
+    "ignore": [
+      "public"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/maccyber/luftkvalitet-micro.git"
+  },
+  "bugs": {
+    "url": "http://github.com/maccyber/luftkvalitet-micro/issues"
+  },
+  "devDependencies": {
+    "coveralls": "2.11.14",
+    "nsp": "2.6.2",
+    "standard": "8.5.0",
+    "tap": "8.0.0"
+  },
+  "dependencies": {
+    "luftkvalitet": "1.0.0",
+    "micro": "6.1.0"
+  }
+}
