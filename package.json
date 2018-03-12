@@ -35,13 +35,13 @@
     "url": "http://github.com/maccyber/luftkvalitet-micro/issues"
   },
   "devDependencies": {
-    "coveralls": "2.11.14",
-    "nsp": "2.6.2",
-    "standard": "8.5.0",
-    "tap": "8.0.0"
+    "coveralls": "3.0.0",
+    "nsp": "3.2.1",
+    "standard": "11.0.0",
+    "tap": "11.1.2"
   },
   "dependencies": {
     "luftkvalitet": "1.0.0",
-    "micro": "6.1.0"
+    "micro": "9.1.4"
   }
 }
